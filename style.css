@@ -1,0 +1,152 @@
+body{
+    background-color: chartreuse;
+}
+.carusel{
+    margin: 50px auto;
+    width: 1000px;
+    height: 550px;
+    box-shadow: 0px 10px 5px 10px #fa0404;
+}
+.carousel-inner{
+    position: relative;
+}
+.card{
+    position: absolute;
+    bottom: 130px;
+    left: 40%;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    opacity: 60%;
+    box-shadow: 0px 5px 5px 15px #0408fa;
+    background:url(https://img.freepik.com/premium-vector/sport-motorcicly-logo_25327-58.jpg);
+    background-size: cover;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: rgb(255, 238, 0);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.carousel-indicators [data-bs-target]:hover{
+    background-color: darkorchid;
+}
+h5{
+    color: rgb(255, 5, 5);
+}
+p{
+    text-shadow: 5px 0px 5px #eeeeee;
+    color: rgb(0, 0, 0);
+}
+.material-symbols-outlined {
+}
+.span-prev {
+    font-size: 50px;
+    color: chartreuse;
+}
+.material-symbols-outlined {
+}
+.span-next {
+    font-size: 50px;
+    color: rgb(255, 145, 0);
+}
+
+.form-floating{
+    width: 300px;
+    margin: 0px auto;
+    margin-top: 50px;
+    background-color: none;
+}
+.floatingInput{
+    background-color:none;
+}
+.form-control{
+    background: transparent;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #0408fa;
+}
+.form-control:focus{
+    background-color: chartreuse;
+}
+
+/* ACARDION */
+.accordion-body{
+    width: 100%;
+}
+.accordion{
+    margin: 400px auto;
+    box-shadow: 0px 5px 15px 15px #09c6f5;
+}
+.div_acardion{
+    text-align: center;
+    margin-top: 10px;
+}
+.acardion_img-1{
+    
+}
+
+
+.div_acardion-3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: url(./img/pngwing.com.png);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(./img/pngwing.com.png);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+
+
+/* ADAPTYW */
+    @media (max-width: 1199px) {
+        .carusel{
+            width: 900px;
+            height: 500px;
+            }
+    }
+    @media (max-width: 991px) {
+        .carusel{
+            width: 800px;
+            height: 450px;
+            }
+    }
+    @media (max-width: 850px){
+        .carusel{
+            margin: 150px auto;
+            width: 600px;
+            height: 330px;
+            }
+        h5{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    @media (max-width: 767px) {
+        .carusel{
+            width: 500px;
+            height: 270px;
+            }
+
+    }
+
+    @media (max-width: 575px) {
+        .carusel{
+            width: 400px;
+            height: 500px;
+            }
+    }
